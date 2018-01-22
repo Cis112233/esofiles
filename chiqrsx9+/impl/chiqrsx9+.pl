@@ -50,7 +50,7 @@ sub interpret {
     $_=$1;
     /[ \t\n]/ or
     /c/i ? print(input) :
-    /h/i ? print("Hello, world!\n") :
+    /h/i ? print("Hello World!\n") :
     /i/i ? interpret(join '', input) :
     /q/i ? print($_[0]) :
     /r/i ? do {for (input) {tr/A-Za-z/N-ZA-Mn-za-m/; print;}} :
